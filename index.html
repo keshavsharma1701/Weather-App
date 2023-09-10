@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Weather App</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body class="bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                  <a class="navbar-brand" href="#">Weather App</a>
+                  <form class="d-flex" role="search">
+                        <input class="form-control me-2" id="city" type="search" placeholder="Search"
+                              aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit" id="submit">Search</button>
+                  </form>
+            </div>
+      </nav>
+      <div class="container my-2">
+            <div class="row row-cols-1 row-cols-md-1 mb-3 text-center">
+                  <div class="col">
+                        <div class="card mb-4 rounded-3 shadow-sm">
+                              <div class="card-header py-3 bg-secondary">
+                                    <h4 class="my-0 fw-normal" id="cityname"></h4>
+                              </div>
+                              <div class="card-body">
+                                    <h1 class="card-title pricing-card-title"><span id="temp"></span><small
+                                                class="text-muted fw-light">&#8451;</small></h1>
+                                    <ul class="list-unstyled mt-3 mb-4">
+                                          <li>Humidity is <span id="humidity"></span></li>
+                                          <li>Maximum temperature is <span id="max_temp"></span> & Minimum temperature
+                                                is <span id="min_temp"></span></li>
+                                          <li>Sunrise at <span id="sunrise"></span> & Sunset at <span
+                                                      id="sunset"></span></li>
+                                          <li>Wind degrees is <span id="wind_degrees"></span> & Wind speed is <span
+                                                      id="wind_speed"></span></li>
+                                    </ul>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+            <h2 class="text-center mb-4 font-weight-bold">Top Cities</h2>
+            <div class="table-responsive">
+                  <table class="table text-center">
+                        <thead>
+                              <tr>
+                                    <th style="width: 20%;" class="bg-secondary"></th>
+                                    <th style="width: 10%;" class="bg-success">Temp</th>
+                                    <th style="width: 10%;" class="bg-primary">Humidity</th>
+                                    <th style="width: 10%;" class="bg-danger">Max_temp</th>
+                                    <th style="width: 10%;" class="bg-danger">Min_temp</th>
+                                    <th style="width: 10%;" class="bg-warning">Sunrise</th>
+                                    <th style="width: 10%;" class="bg-warning">Sunset</th>
+                                    <th style="width: 10%;" class="bg-info">Wind_degrees</th>
+                                    <th style="width: 10%;" class="bg-info">Wind_speed</th>
+                              </tr>
+                        </thead>
+                        <tbody>
+                              <tr>
+                                    <th class="bg-secondary">Lucknow</th>
+                                    <td id="lucknow1"></td>
+                                    <td id="lucknow2"></td>
+                                    <td id="lucknow3"></td>
+                                    <td id="lucknow4"></td>
+                                    <td id="lucknow5"></td>
+                                    <td id="lucknow6"></td>
+                                    <td id="lucknow7"></td>
+                                    <td id="lucknow8"></td>
+                              </tr>
+                              <tr>
+                                    <th class="bg-secondary">Jaipur</th>
+                                    <td id="jaipur1"></td>
+                                    <td id="jaipur2"></td>
+                                    <td id="jaipur3"></td>
+                                    <td id="jaipur4"></td>
+                                    <td id="jaipur5"></td>
+                                    <td id="jaipur6"></td>
+                                    <td id="jaipur7"></td>
+                                    <td id="jaipur8"></td>
+                              </tr>
+                              <tr>
+                                    <th class="bg-secondary">Indore</th>
+                                    <td id="indore1"></td>
+                                    <td id="indore2"></td>
+                                    <td id="indore3"></td>
+                                    <td id="indore4"></td>
+                                    <td id="indore5"></td>
+                                    <td id="indore6"></td>
+                                    <td id="indore7"></td>
+                                    <td id="indore8"></td>
+                              </tr>
+                              <tr>
+                                    <th class="bg-secondary">Mumbai</th>
+                                    <td id="mumbai1"></td>
+                                    <td id="mumbai2"></td>
+                                    <td id="mumbai3"></td>
+                                    <td id="mumbai4"></td>
+                                    <td id="mumbai5"></td>
+                                    <td id="mumbai6"></td>
+                                    <td id="mumbai7"></td>
+                                    <td id="mumbai8"></td>
+                              </tr>
+                              <tr>
+                                    <th class="bg-secondary">Pune</th>
+                                    <td id="pune1"></td>
+                                    <td id="pune2"></td>
+                                    <td id="pune3"></td>
+                                    <td id="pune4"></td>
+                                    <td id="pune5"></td>
+                                    <td id="pune6"></td>
+                                    <td id="pune7"></td>
+                                    <td id="pune8"></td>
+                              </tr>
+                        </tbody>
+                  </table>
+            </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+            crossorigin="anonymous"></script>
+      <script src="script.js"></script>
+</body>
+</html>
